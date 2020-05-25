@@ -19,5 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/category','CategoryController@all');
-
 Route::delete('/category/{category}','CategoryController@destroy');
+
+Route::get('/product','productController@all');
+Route::delete('/product/{product}','productController@destroy');
