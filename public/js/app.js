@@ -2027,6 +2027,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'ProductList',
   data: function data() {
@@ -37754,11 +37755,14 @@ var render = function() {
               "\n            "
           ),
           _c("br"),
-          _vm._v(
-            "\n            Product created at: " +
-              _vm._s(product.created) +
-              "\n            "
-          ),
+          _vm._v("\n            Product created at: "),
+          _c("span", {
+            staticClass: "text-muted",
+            domProps: { textContent: _vm._s(product.created) }
+          }),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
           _c(
             "button",
             {
