@@ -14,4 +14,5 @@ class ProductSeeder extends Seeder
     {
         factory(Product::class,5)->create();
     }
+
 }
