@@ -13,7 +13,8 @@
                 <br>
                 Category: {{product.category.name}}
                 <br>
-                Product created at: {{product.created}}
+                Product created at: <span class="text-muted" v-text="product.created"></span>
+                <br>
                 <button class="btn btn-danger mb-2" @click="destroy(product)"> Delete </button>
             </li>
         </ul>
